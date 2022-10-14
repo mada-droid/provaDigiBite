@@ -43,13 +43,13 @@ public class Room{
         return reservation;
     }
 
-//    public ArrayList<Reservation> reservations(){
-//        List<Reservation> sortedList = reservationsList.stream()
-//                .sorted(Comparator.comparingInt(Reservation::getCheckInDate))
-//                .collect(Collectors.toList());
-//
-//        return (ArrayList<Reservation>) sortedList;
-//    }
+   public ArrayList<Reservation> reservations(){
+       List<Reservation> sortedList = reservationsList.stream()
+               .sorted(Comparator.comparingInt(Reservation::getCheckInDate))
+               .collect(Collectors.toList());
+
+       return (ArrayList<Reservation>) sortedList;
+   }
 
     @Override
     public String toString() {
