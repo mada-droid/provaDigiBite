@@ -8,6 +8,9 @@ public class MainClass {
         Reservation p4 = r.reserve("Mada", 20, 55);
         Reservation p1 = r.reserve("Pippo", 105, 120);
 
+        for (Reservation p: r. reservations ()) {
+        System.out.println(p.getName());
+        }
 
     }
 }
